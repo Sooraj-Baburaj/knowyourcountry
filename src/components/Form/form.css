@@ -1,0 +1,62 @@
+.Form {
+    width: 50vw;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.Form .inputbox {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.inputbox input, label, select, button {
+    flex: 1;
+}
+.inputbox input {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    padding: 1px 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.inputbox select:focus {
+    outline: none;
+}
+.inputbox input:focus {
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+}
+.inputboxCheck {
+    display: flex;
+    align-items: center;
+}
+.inputboxCheck label {
+    font-size: 12px;
+    padding: 10px 5px;
+}
+.inputbox button {
+    padding: 10px;
+    color: white;
+    background: black;    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.inputbox button:hover {
+    color: black;
+    background: white;
+}
+.Form-error {
+    color: red;
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+    .Form {
+        width: 100%;
+    }
+  }

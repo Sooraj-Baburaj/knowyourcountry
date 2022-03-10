@@ -1,0 +1,36 @@
+.KYC-table {
+    margin: 30px 10px;
+    overflow: scroll;
+    height: 80vh;
+    display: flex;
+}
+.noData p {
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto ;
+    color: rgba(0,0,0,0.5);
+}
+table, thead {
+    margin: 0 5px 5px;
+    border-collapse: collapse;
+}
+thead {
+    background: rgba(0,0,0,0.1);
+}
+tr, td {
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: sans-serif;
+    white-space: nowrap;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+tr:hover {
+    background: rgba(0,0,0,0.08);
+}
+@media screen and (max-width: 800px) {
+    .KYC-table {
+        height: 40vh;
+    }
+  }
+  
